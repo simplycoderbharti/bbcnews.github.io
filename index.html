@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container nav-flex">
+            <div class="bbc nav-flex">
+                <h2 class="B">B</h2>
+                <h2 class="B">B</h2>
+                <h2 class="C">C</h2>
+                <i class="fa-solid fa-user" style="color: #090c10;"></i>
+                <a href="file:///C:/Users/user/Desktop/News%20App/SING/sign.html" class="sign-in">Sign In</a>
+
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+
+            <div class="nav-links">
+                <ul class="nav-flex">
+
+                    <li class="hover-link nav-item" id="home" onclick="onNavItemClick('home')"><a href="#">Home</a></li>
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')"><a href="#">IPL</a>
+                    </li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')"><a
+                            href="#">Finance</a></li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')"><a
+                            href="#">Politics</a></li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')"><a
+                            href="#">Sports</a></li>
+                    <li class="hover-link nav-item" id="economic" onclick="onNavItemClick('economic')"><a
+                            href="#">Economic</a></li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">
+                        <a href="#">Entertainment</a>
+                    </li>
+                    <li class="hover-link nav-item" id="Travel" onclick="onNavItemClick('travel')"><a
+                            href="#">Travel</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="news-input" placeholder="eg.science" id="search-text">
+                <i class="fa-solid fa-magnifying-glass search-button" id="search-button" style="color: #07090e;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="news-menu news-div">
+            <div class="container">
+                <div class="news">
+                    <a href="#">News</a>
+                </div>
+            </div>
+            <hr>
+            <section class="news-menu   ">
+                <div class="container ">
+
+
+                    <div class="nav-links ">
+                        <ul class="nav-flex news-menu-nav">
+                            <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('home')"><a
+                                    href="#">Home</a></li>
+                            <div class="vl"></div>
+                            <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')"><a href="#">IPL</a>
+                            </li>
+                            <div class="vl"></div>
+                            <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')"><a
+                                    href="#">Finance</a></li>
+                            <div class="vl"></div>
+                            <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')"><a
+                                    href="#">Politics</a></li>
+                            <div class="vl"></div>
+                            <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')"><a
+                                    href="#">Sports</a></li>
+                            <div class="vl"></div>
+                            <li class="hover-link nav-item" id="economic" onclick="onNavItemClick('economic')"><a
+                                    href="#">Economic</a></li>
+                            <div class="vl"></div>
+                            <li class="hover-link nav-item" id="entertainment"
+                                onclick="onNavItemClick('entertainment')"><a href="#">Entertainment</a></li>
+                            <div class="vl"></div>
+                            <li class="hover-link nav-item" id="Travel" onclick="onNavItemClick('travel')"><a
+                                    href="#">Travel</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+
+        <div class="card-container container nav-flex" id="card-container">
+
+
+
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                    dolore reiciendis enim quia velit ipsa dolores consequatur doloremque minus ipsum!</p>
+            </div>
+        </div>
+    </template>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

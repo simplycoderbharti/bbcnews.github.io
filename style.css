@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color-dark: #1d69a3;
+  --accent-color: #2294ed;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "poppins";
+  color: var(--primary-text-color);
+}
+
+p {
+  color: var(--secondary-text-color);
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.sign-in {
+  margin-bottom: 15px;
+
+  margin-left: -16px;
+  font-weight: bold;
+}
+
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 85%;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.bbc {
+
+  color: white;
+
+}
+
+.bbc .B {
+  background-color: black;
+  padding: 4px 12px;
+}
+
+.bbc .C {
+  background-color: black;
+  padding: 4px 12px;
+}
+
+nav a {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  line-height: 3;
+  color: black;
+}
+
+.bbc i {
+  font-size: 25px;
+}
+
+
+
+/* hover effect in nav */
+nav a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0 50%;
+}
+
+nav a:hover::before {
+  transform: scale3d(1, 1, 1);
+}
+
+nav a::before {
+  background: #E91E63;
+  transform-origin: 100% 50%;
+}
+
+nav a:hover::before {
+  transform-origin: 0 50%;
+}
+
+.news-div {
+  margin-top: -20px;
+}
+
+.news-menu {
+  background-color: #B80000;
+}
+
+.news-menu .news a {
+  text-align: left;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.main-nav {
+
+  justify-content: space-between;
+  padding-block: 8px;
+}
+
+
+
+.vl {
+  border-left: 2px solid white;
+  height: 25px;
+  margin: 2px;
+}
+
+.news-nav {
+  color: white;
+}
+
+
+
+.hover-link {
+  cursor: pointer;
+}
+
+.hover-link:hover {
+  color: var(--secondary-text-color)
+}
+
+.hover-link:active {
+  color: red;
+}
+
+.nav-item:active {
+  color: var(--accent-color)
+}
+
+.search-bar {
+  height: 32px;
+  gap: 8px;
+
+  margin-right: 44px;
+
+}
+
+.news-input {
+  width: 200px;
+  height: 100%;
+  padding-inline: 12px;
+  border-radius: 4px;
+  border: 2px solid #bbd0e2;
+}
+
+.search-button {
+
+  color: white;
+  /* padding: 8px 24px; */
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: -60px;
+}
+
+.search-button :hover {
+  background-color: var(--accent-color-dark);
+}
+
+main {
+  padding-block: 20px;
+  /* margin-top:80px; */
+}
+
+
+.news-menu-nav a {
+  line-height: 3;
+  color: white;
+}
+
+
+.card-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+  margin-top: 55px;
+}
+
+.card {
+  width: 30%;
+  min-height: 400px;
+  box-shadow: 0 0 4px #d4ecff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #f9fdff;
+  transform: traslateY(-2px);
+
+}
+
+.card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+
+}
+
+.news-source {
+  margin-block: 12px;
+}
+
+@media screen and (max-width:1024px) {
+  .card {
+    width: 48%;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .card {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .main-nav {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-flex {
+    padding: 0;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /* .menu {
+    height: auto;
+    display: flex;
+  } */
+
+  .nav a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .nav a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
